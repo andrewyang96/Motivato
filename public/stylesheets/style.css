@@ -1,0 +1,234 @@
+body {
+	background: url(http://loremflickr.com/1920/1080/clouds) center top !important;
+	background-size: cover !important;
+}
+
+* {
+	color: white !important;
+	text-shadow: 2px 2px 10px #000;
+}
+
+/* Containers CSS */
+
+#container {
+	height: 100%;
+	width: 100%;
+}
+
+#top-left {
+	height: 10%;
+	width: 40%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#top-right {
+	height: 15%;
+	width: 10%;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#center {
+	height: 40%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 30%;
+}
+
+#center-below {
+	height: 20%;
+	width: 50%;
+	display: block;
+	position: absolute;
+	left: 25%;
+	top: 70%;
+}
+
+#bottom {
+	height: 8%;
+	width: 50%;
+	display: block;
+	position: absolute;
+	left: 25%;
+	top: 90%;
+	text-align: center;
+}
+
+/* Labels CSS */
+
+#settings-icon {
+	font-size: 30px;
+	width: 10%;
+	height: 30px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 0.4;
+}
+
+#settings-icon:hover, #settings-icon:focus {
+	opacity: 1;
+}
+
+#search-bar {
+	width: 80%;
+	height: 30px;
+	position: relative;
+	display: inline-block;
+	top: 0;
+	vertical-align: middle;
+}
+
+#search-icon {
+	font-size: 30px;
+	width: 10%;
+	top: 0;
+	position: relative;
+	text-align: right;
+	float: left;
+	padding-right: 2%;
+	opacity: 0.4;
+}
+
+#search-icon:hover, #search-icon:focus {
+	opacity: 1;
+}
+
+#search-input {
+	text-shadow: none;
+	background: rgba(128,128,128,.25);
+	border: 1px solid gray;
+	padding: 0 5px 0 5px;
+	font-size: 30px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+
+#search-input:hover, #search-input:focus {
+	outline: none;
+	padding: 0 5px 0 5px;
+	background: rgba(128,128,128,.75);
+}
+
+#weather {
+	height: 100%;
+	width: 90%;
+	font-family: sans-serif;
+	text-align: right;
+	margin-right: 10%;
+}
+
+#loading-weather {
+	float: left;
+	font-size: 16px;
+	margin-top: 16px;
+	font-family: sans-serif;
+}
+
+#weather-temp, #weather-location, #weather-conditions, #weather-wind {
+	position: relative;
+	display: block;
+}
+
+#weather-temp {
+	margin-bottom: -16px;
+}
+
+#temp, #location, #conditions, #wind {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 8px;
+}
+
+#temp {
+	margin-top: 0;
+	padding-bottom: 16px;
+	font-size: 24px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#weather-conditions, #weather-wind {
+	visiblity: hidden;
+	opacity: 0;
+}
+
+#location {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#time:before, #top-left:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#time {
+	position: relative;
+	top: 0;
+	font-size: 144px;
+	font-family: sans-serif;
+	height: 75%;
+	font-weight: bold;
+	text-align: center;
+}
+
+#date:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#date {
+	position: relative;
+	font-size: 54px;
+	font-family: sans-serif;
+	height: 25%;
+	text-align: center;
+}
+
+#greeting:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#greeting {
+	height: 100%;
+	font-size: 40px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#quote {
+	font-size: 20px;
+	position: relative;
+	top: 40%;
+	height: 60%;
+	line-height: 200%;
+	text-align: center;
+}
+
+#quote-author {
+	font-size: 16px;
+	font-style: italic;
+	display: none;
+	opacity: 0;
+	height: 40%;
+	text-align: center;
+}

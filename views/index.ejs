@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Motivato</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.8.0/components/icon.min.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/weather.css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<!-- Start settings and search -->
+			<div id="top-left">
+				<div id="settings-icon">
+					<i class="setting icon"></i>
+				</div>
+
+				<div id="search-bar">
+					<label for="query" id="search-icon">
+						<i class="google icon"></i>
+						<!--<i class="twitter icon"></i>-->
+						<!--<i class="reddit icon"></i>-->
+						<!--<i class="yahoo icon"></i>-->
+						<!--<i class="tumblr icon"></i>-->
+					</label>
+					<form>
+						<input type="text" id="search-input" name="query" autocomplete="off" />
+					</form>
+				</div>
+			</div>
+			<!-- End settings and search -->
+
+			<!-- Start weather -->
+			<div id="top-right">
+				<div id="loading-weather">Loading weather...</div>
+				<div id="weather">
+					<div id="weather-temp"></div>
+					<div id="weather-location"></div>
+					<div id="weather-conditions"></div>
+					<div id="weather-wind"></div>
+				</div>
+			</div>
+			<!-- End weather -->
+
+			<!-- Start time and date -->
+			<div id="center">
+				<div id="time"><strong>HH:MM</strong></div>
+				<div id="date">Month DD, YYYY</div>
+			</div>
+			<!-- End time and date -->
+
+			<!-- Start greeting -->
+			<div id="center-below">
+				<div id="greeting">Hello Andrew! What are your goals today?</div>
+			</div>
+			<!-- End greeting -->
+
+			<!-- Start quotes -->
+			<div id="bottom">
+				<div id="quote">"If you can't make it good, at least make it look good."</div>
+				<div id="quote-author">Bill Gates</div>
+			</div>
+			<!-- End quotes -->
+
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="/javascripts/script.js"></script>
+		<script src="/javascripts/jquery.simpleWeather.min.js"></script>
+		<script src="/javascripts/geolocation.js"></script>
+	</body>
+</html>
